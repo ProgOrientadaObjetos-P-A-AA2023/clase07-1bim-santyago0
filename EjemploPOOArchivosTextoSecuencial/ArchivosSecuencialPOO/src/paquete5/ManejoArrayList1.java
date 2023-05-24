@@ -23,8 +23,11 @@ public class ManejoArrayList1 {
         profesores[1] = prof2;
         
         for (int i = 0; i < profesores.length; i++) {
-            System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
-                    profesores[i].obtenerTipo());
+            // Se crea una variable de tipo Profesor para almacenar el arreglo
+            // de tipo Profesor
+            Profesor p1 = profesores[i];
+            System.out.printf("%s - %s\n", p1.obtenerNombre(),
+                    p1.obtenerTipo());
         }
         
         System.out.println("-----------------------------");
@@ -35,8 +38,9 @@ public class ManejoArrayList1 {
         profesores2.add(prof2);
         
         for (int i = 0; i < profesores2.size(); i++) {
-            System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
-                    profesores2.get(i).obtenerTipo());
+            Profesor p1 = profesores2.get(i);
+            System.out.printf("%s - %s\n", p1.obtenerNombre(),
+                    p1.obtenerTipo());
         }
         
         System.out.println("-----------------------------");

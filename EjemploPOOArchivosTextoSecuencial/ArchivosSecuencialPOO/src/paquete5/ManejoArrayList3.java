@@ -42,6 +42,12 @@ public class ManejoArrayList3 {
                     calificaciones.get(i).obtenerNota());
         }
         
-        
+        double promedio = 0;
+        for (int i=0; i<calificaciones.size(); i++){
+            promedio += calificaciones.get(i).obtenerNota()
+                    /calificaciones.size();
+        }
+        System.out.printf("\nEl promedio de calificasiones es: %.1f\n",
+                promedio);
     }
 }
