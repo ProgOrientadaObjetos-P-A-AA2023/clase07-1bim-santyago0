@@ -14,12 +14,14 @@ public class ManejoArrayList5 {
         String [] lineas = {"Tara Hernandez|contratado|30",
             "Luis Andrade|factura|35","Ana Juarez|nombramiento|40"};
         
-        ArrayList<String> linea = new ArrayList<>();
         for (int i=0; i<lineas.length; i++){
-            linea = new ArrayList<>(Arrays.asList(
+            // String c = lineas[i]
+            ArrayList<String> linea = new ArrayList<>(Arrays.asList(
                     lineas[i].split("\\|")));
-            Profesor2 profe = new Profesor2(linea.get(0),linea.get(1),
-                Integer.parseInt(linea.get(2)));
+            Profesor2 profe = new Profesor2(linea.get(0),
+                    linea.get(1),
+                    Integer.parseInt(linea.get(2))); 
+                    // linea.get() = c.get()
             System.out.printf("%s\n",profe);
         }
     }
