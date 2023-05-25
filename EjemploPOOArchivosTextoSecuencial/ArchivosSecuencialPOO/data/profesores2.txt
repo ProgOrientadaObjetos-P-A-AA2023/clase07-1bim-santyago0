@@ -10,3 +10,6 @@ Kevin Page;nombramiento
 Tara Hernandez;contratado
 Gregory Walsh;nombramiento
 Kevin Page;nombramiento
+Tara Hernandez;contratado
+Gregory Walsh;nombramiento
+Kevin Page;nombramiento
